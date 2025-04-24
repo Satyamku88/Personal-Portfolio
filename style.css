@@ -6,214 +6,83 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-  
 }
 
 header {
-    position: fixed;
-    background: linear-gradient(to right, #0a181a, #6c6e60);
-    top: 0;
-    left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    padding: 10px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
 }
 
 .logo {
     font-size: 2em;
-    color: #74d9fb;
     cursor: default;
 }
 
-.logo span {
-    color: #7dc935;
-}
-
-.navigation {
-    margin-left: -300px;
-}
-
-.navigation a {
-    font-size: 1.1em;
-    color: #fdfdfd;
-    text-decoration: none;
-    margin-right: 30px;
-    font-weight: 500;
-    transition: .3s;
-}
-
-.navigation a:hover {
-    color: #e1e133;
-}
-
-.btn-talk {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 35px;
-    background: #4b8cc4;
-    border-radius: 10px;
-    border: 2px solid #cac2d3;
-    
-    font-weight: 500;
-    transition: .3s;
-}
-
-.btn-talk:hover {
-    color: #e4e1e9;
-    background: transparent;
-    
-}
-
 .home {
-    position: relative;
-    width: 100%;
-    height: 115vh;
-    top: 50px;
-    left: 0;
-    background: url('778.jpg');
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
-    padding: 30px 100px;
-}
-
-.content {
-    margin-bottom: 110px;
-    max-width: 600px;
-    color: #f1f1f1;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .content h2 {
-    font-size: 3em;
-}
-
-.content h2 span {
-    color: #c3bf66;
+    font-weight: 700;
 }
 
 .content h4 {
-    font-size: 2em;
-}
-
-.content p {
-    padding: 10px 0 40px 0;
-}
-
-.btn-group a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 40px;
-    background: #265c3d;
-    border-radius: 10px;
-    border: 2px solid #9f95ab;
     font-weight: 500;
-    transition: .3s;
-}
-
-.btn-group a:hover:nth-child(1) {
-    color: #7d2ae8;
-    background: transparent;
-}
-
-.btn-group a:nth-child(2) {
-    color: #ddd4e8;
-    background: transparent;
-    margin-left: 30px;
-    padding: 10px 30px;
-}
-
-.btn-group a:hover:nth-child(2) {
-    color: #fff;
-    background: #0e0617;
-}
-
-.social-icons {
-    position: absolute;
-    bottom: 130px;
 }
 
 .social-icons a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: #2b4e44;
-    border-radius: 50%;
-    margin-right: 32px;
-    text-align: center;
-    line-height: 35px;
-    border: 1px solid #fff;
-    outline: 2px solid #7b833b;
-    transition: .3s;
+    transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-    transform: translateY(-5px);
-}
-
-.social-icons a i {
-    color: #fff;
-}
-.about {
-    margin-top: 50px;
-    max-width: 1500px;
-    color: #fefefe;
-    text-align: center; 
-   background-color: #4f4d4e;
-    padding: 50px 0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-left: 00px;
- 
+    transform: scale(1.2);
+    background-color: #b8db57;
+    color: #167ad7;
 }
 
 
-.about h2 {
-    background-color: #575f4f;
-    font-size: 3em;
+.about, .project {
+    padding: 60px 0;
 }
-.about p {
-    padding: 20px 0;
-    font-size: 1.2em;
-    line-height: 1.5em;
+
+.about h2, .project h2 {
+    
+    font-weight: 700;
 }
-.about .btn-group {
-    margin-top: 20px;
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
 }
-.about .btn-group a {
-    padding: 10px 30px;
-    background: #4b8cc4;
-    border-radius: 10px;
-    border: 2px solid #cac2d3;
-    font-weight: 500;
-    transition: .3s;
+.projects {
+    padding: 60px 0;
 }
-.about .btn-group a:hover {
-    color: #e4e1e9;
-    background: transparent;
+
+.projects .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.project {
-    margin-top: 50px;
-    max-width: 1500px;
-    color: #fefefe;
-    text-align: center; 
-   background-color: #4f4d4e;
-    padding: 50px 0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-left: 00px;
- 
+
+.projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-.project h2 {
-    background-color: #575f4f;
-    font-size: 3em;
+
+.projects .card-img-top {
+    height: 200px;
+    object-fit: cover;
 }
-.project p {
-    padding: 20px 0;
-    font-size: 1.2em;
-    line-height: 1.5em;
+
+.projects .card-body {
+    padding: 20px;
 }
-.project .btn-group {
-    margin-top: 20px;
+
+.projects .card-title {
+    font-weight: 600;
+}
+
+.projects .card-text {
+    font-size: 1em;
 }

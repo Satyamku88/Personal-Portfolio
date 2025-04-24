@@ -7,70 +7,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SATYAM KUMAR KASYAP</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h2 class="logo"><span>S</span>atyam.</h2>
-    <nav class="navigation">
-      <a href="#">Home</a>
-      <a href="#project">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="fixed-top bg-dark text-white py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="logo mb-0"><span class="text-primary">S</span>atyam.</h2>
+        <nav class="navigation">
+          <a href="#home" class="text-white text-decoration-none mx-3">Home</a>
+          <a href="#projects"class="text-white text-decoration-none mx-3">Projects</a>
+          <a href="#about" class="text-white text-decoration-none mx-3">About</a>
+          <a href="#contact" class="text-white text-decoration-none mx-3">Contact</a>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <section class="home">
-    <div class="content">
-      <h2>Hi, I'm <span>SATYAM KUMAR KASYAP</span></h2>
-      <h4>App Developer</h4>
-      <p>My self Satyam kumar, I'm a passionate software engineer with a love for creating innovative solutions.
-        In my free time, I enjoy exploring the outdoors and diving into captivating books.</p>
-     
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/satyam-kumar-kasyap-bb4aa2304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://www.facebook.com/satyam.praksh.9?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://github.com/Satyamku88"><i class="fa-brands fa-github"></i></a>
+  <section id="home" class="home bg-light text-dark py-5" style="background: url('profile.jpg') no-repeat center/cover; height: 100vh; margin-top: 60px;">
+    <div class="container">
+      <div class="content text-left text-white" style="margin-right: 350px;">
+        <h2 class="display-3">Hi, I'm <span class="text-warning">SATYAM KUMAR </span></h2>
+        <h4 class="display-6">AI-Powered Application Developer </h4>
+        <p class="lead"style="max-width: 600px;">I am a passionate software engineer with a strong background in Java development. I love creating innovative solutions that make a difference.</p>
+    </p>
+        <div class="social-icons mt-4">
+          <a href="https://www.linkedin.com/in/satyam-kumar-kasyap-bb4aa2304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-outline-light rounded-circle me-3"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/satyam.praksh.9?mibextid=ZbWKwL" class="btn btn-outline-light rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/Satyamku88" class="btn btn-outline-light rounded-circle"><i class="fab fa-github"></i></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="about">
-    <div class="about">
-      <h2>About Me</h2>
-      <p>I am a dedicated Java Developer with a strong passion for building efficient and scalable software solutions. I have experience in developing applications that solve real-world problems and enjoy collaborating with teams to deliver impactful projects.</p>
+  <section id="about" class="about bg-dark text-white py-5">
+    <div class="container">
+      <div class="about-content text-center">
+        <h2 class="display-4 text-primary">About Me</h2>
+        <p class="lead">Computer Science undergraduate currently in the 3rd year at CUSAT, with practical experience in AI-based applications, 
+          embedded systems, and full-stack development. Built real-world projects like an offline AI vision chatbot and an AI
+          powered healthcare assistant designed to improve medical access in rural areas. Seeking a summer internship to expand 
+          technical skills and contribute to innovative, socially impactful technology solutions. </p>
+      </div>
+      <div>
+        <h3>Teachnical Skills</h3>
+        <p>• Languages: Java, C++, Python, HTML, CSS, JavaScript, Kotlin <br>
+          • Frameworks & Libraries: React.js, Node.js, Express, Tkinter <br>
+          • Web Development: DOM Manipulation, Responsive Design, REST APIs <br>
+          • Tools & Platforms: Git, MySQL, VS Code, Raspberry Pi, Google Cloud, Ollama, YOLO, DeepSeek <br>
+          • AI & ML: Face Recognition, Voice Recognition (Vosk), Object Detection, LLM integration <br>
+          • App Dev: Basic Android development using Kotlin <br>
+          
+      </div>
     </div>
   </section>
 
-  <section id="project">
-    <div class="project">
-      <h2>Projects</h2>
-      <p>Here are some of the projects I have worked on:</p>
-      <ul>
-        <li><strong>Project 1:</strong> Description of the project.</li>
-        <li><strong>Project 2:</strong> Description of the project.</li>
-        <li><strong>Project 3:</strong> Description of the project.</li>
-      </ul>
+<section id="projects" class="projects bg-dark text-white py-5">
+  <div class="container">
+    <div class="project-content text-center">
+      <h2 class="display-4 text-primary">Projects</h2>
+      <p class="lead">Here are some of the projects I have worked on:</p>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card bg-secondary text-white">
+            <img src="3.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title"> AgriAssist-AI </h5>
+              <p class="card-text">🌱 AgriAssist-AI is an open-source IoT + AI ecosystem empowering rural farmers with real-time soil analytics, crop recommendations, and automated insurance claims (PMFBY integration). Combines low-cost sensors, predictive AI models,
+                 and a farmer-friendly mobile app to boost yields, reduce waste, and combat fraud. </p>
+              <a href="https://www.linkedin.com/posts/satyam-kumar-kasyap-bb4aa2304_agtech-aiforgood-sustainablefarming-activity-7298830466206302208-czrF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3CdjgB8C14S0yWWQI6MDYJxgpNwaUQCbA" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card bg-secondary text-white">
+            <img src="2.jpg"card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">AI-Powered Healthcare Assistant for Rural Areas</h5>
+              <p class="card-text">Introducing Bloom: an AI-driven healthcare chatbot for rural areas. It offers symptom analysis,
+                 SOS alerts, telemedicine, and pharmacy tracking for fast life-saving care</p>
+                <a href="https://www.linkedin.com/posts/satyam-kumar-kasyap-bb4aa2304_vit-hackathon-activity-7304256778282696704-QFYP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3CdjgB8C14S0yWWQI6MDYJxgpNwaUQCbA" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card bg-secondary text-white">
+            <img src="4.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Offline AI Vision Chatbot </h5>
+              <p class="card-text">💡 Offline AI Assistant with live camera object detection, face recognition, voice input, and LLM-powered responses. Built with Python, YOLOv8, Vosk, face_recognition, and DeepSeek via Ollama — all running fully offline on Windows.</p>
+              <a href="https://www.linkedin.com/posts/satyam-kumar-kasyap-bb4aa2304_ai-machinelearning-computervision-activity-7320109100372004865-lwSY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3CdjgB8C14S0yWWQI6MDYJxgpNwaUQCbA" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group mt-4">
+        <a href="https://www.linkedin.com/in/satyam-kumar-kasyap-bb4aa2304/recent-activity/all/" class="btn btn-primary">View All Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="contact bg-light text-dark py-5">
+    <div class="container">
+      <div class="contact-content text-center">
+        <h2 class="display-4">Contact Me</h2>
+        <form action="mailto:satyamku88@gmail.com" method="post" enctype="text/plain" class="mt-4">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="contact">
-      <h2>Contact Me</h2>
-      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 
